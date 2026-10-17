@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>lisp-interpreter-x</title>
+  <link rel="stylesheet" href="./style.css"><script type="module" src="./app.js"></script>
+</head>
+<body>
+<main class="shell">
+  <header><p class="eyebrow">little languages / 01</p><h1>Lisp, in a page.</h1><p>A small interpreter for trying an idea, breaking it, and seeing what the machine says back.</p></header>
+  <div class="workspace">
+    <section class="repl" aria-label="Lisp interpreter">
+      <div class="bar"><span class="lights" aria-hidden="true">● ● ●</span><strong>repl.lisp</strong><button id="reset">Reset session</button></div>
+      <ol id="transcript" class="transcript" aria-live="polite"><li class="hint">Type an expression below. Shift+Enter runs it.</li></ol>
+      <form id="prompt-form"><label for="source">&gt;</label><textarea id="source" rows="3" spellcheck="false" aria-label="Lisp code">(+ 1 (* 2 3))</textarea><button type="submit">Run ↗</button></form>
+    </section>
+    <aside class="guide"><h2>Try these</h2>
+      <button data-example="(define square (lambda (x) (* x x)))\n(square 8)"><code>(define square (lambda (x) (* x x)))<br>(square 8)</code></button>
+      <button data-example="(if (> 9 4) \"yes\" \"no\")"><code>(if (&gt; 9 4) "yes" "no")</code></button>
+      <button data-example="(first (rest (list 10 20 30)))"><code>(first (rest (list 10 20 30)))</code></button>
+      <p>Supports numbers, strings, booleans, lists, arithmetic, <code>define</code>, <code>lambda</code>, <code>if</code>, and <code>begin</code>. Not a full Scheme.</p>
+    </aside>
+  </div>
+</main>
+</body>
+</html>

@@ -1,26 +1,5 @@
-# Project Name
-What is this app
+# lisp-interpreter-x
 
-## Overview
-Description of what the app does
+A tiny Lisp interpreter you can run in a browser. It supports arithmetic, comparisons, `define`, `lambda`, `if`, `begin`, lists, strings, and booleans. It is a learning project, not a full Scheme implementation. Evaluation has a step limit so accidental recursion cannot lock the page indefinitely.
 
-## Usage 
-How to use the app.
-
-## Features
-Features of the app 
-
-## Getting Started
-How to replicate the app on local environment or how to use it if cloudified
-
-## Dependencies
-Include all the dependencies to be installed for app functionality 
-
-## Contributing
-If necessary, include how to offer contributions to the app
-
-## Acknowledgments
-Credits
-
-## License
-Include licences if possible(necessary)
+Open `site/index.html` locally or serve `site/` over HTTP. Run `npm test` to check parsing and evaluation. GitHub Actions tests before publishing the static app to Pages.
